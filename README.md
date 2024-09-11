@@ -40,9 +40,7 @@ To log into the Heroku toolbelt CLI:
 4. In the terminal, run `heroku_config`
 5. Paste in your API key when asked
 
-
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
 
 * Set the runtime.txt Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
