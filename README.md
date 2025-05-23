@@ -16,7 +16,7 @@ You can safely delete the Template Instructions section of this README.md file a
 
 1. In VS Code, select **File** -> **Open Folder**.
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or **Open** button on Mac.
+1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
 
 1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
 
@@ -35,22 +35,29 @@ Click the gear icon in the lower left-hand corner of the screen to open the Mana
 
 1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
 
-1. DO NOT click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
 
 1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
 
-1. Important: Note that the `.venv` folder is in the `.gitignore` file so won't be tracked by Git.
+1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
 
-1. Return to the terminal by clicking on the TERMINAL tab or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
 
 1. In the terminal, use the command below to install your dependencies. This may take several minutes.
- `pip3 install -r requirements.txt`
+
+ ```console
+ pip3 install -r requirements.txt
+ ```
 
 1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
 
 1. Click the **kernel** button and choose **Python Environments**.
 
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use `! python --version` in a notebook code cell.
+Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
+
+```console
+! python --version
+```
 
 ## Deployment Reminders
 
@@ -61,5 +68,5 @@ Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it wi
 2. At the **Deploy** tab, select **GitHub** as the deployment method.
 3. Select your repository name and click **Search**. Once it is found, click **Connect**.
 4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button **Open App** on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the `.slugignore` file.
+5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
+6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
