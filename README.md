@@ -1,4 +1,4 @@
-# ![AI logo](https://media.licdn.com/dms/image/v2/D4E16AQGhs_RRie8XAw/profile-displaybackgroundimage-shrink_350_1400/B4EZhg5by7GcAY-/0/1753972326982?e=1762387200&v=beta&t=YZKH32qYFaO_mb401qru40kGNmlCB7pe0w43oRAXxng)
+# ![HR image](https://github.com/illusio666/employee_attrition_analysis/blob/main/hero.png)
 
 ## Employee Attrition Analysis
 
