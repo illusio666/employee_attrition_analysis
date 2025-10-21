@@ -1,72 +1,93 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ![AI logo](https://media.licdn.com/dms/image/v2/D4E16AQGhs_RRie8XAw/profile-displaybackgroundimage-shrink_350_1400/B4EZhg5by7GcAY-/0/1753972326982?e=1762387200&v=beta&t=YZKH32qYFaO_mb401qru40kGNmlCB7pe0w43oRAXxng)
 
-## Template Instructions
+## Employee Attrition Analysis
 
-Welcome,
+The following analysis looks at a total of 1400 employee records, some of whom have left the organisation. The intent is to improve our understanding of those departing employees, understand if there might be any common factors causing their departure, and to be able to predict future potential departures. This will allow the organisation to do two things:
+- to address any underlying factors that have a significant relationship to employee departure, and
+- identify those employees at highest risk of departure and focus on their retention as a priority.
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+## Project Objective 📊
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+The business has asked that the Data Analysis team review the data and identify actions that management may consider to improve staff retention. These recommendations should be clear and supported with easily-understood charts and visualisations for those team members who are not data analysts.
 
-## How to use this repo
+## Dataset Content & Overview 📁
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+This publicly-available  data set has been sourced from HuggingFace <https://huggingface.co/datasets/Redsmoothy/HR_Attrition>
 
-1. Copy the URL of your repository to your clipboard.
+## Data Preparation Summary 🧹
 
-1. In VS Code, select **File** -> **Open Folder**.
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
+## Project Approach 🧠
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
 
-1. In VS Code, select **File** > **Open Folder** again.
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+## Hypotheses and validation approach 
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+There are 4 hypotheses that the business has asked to be addressed as part of this analysis:
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+1) Attrition is spread evenly across all departments, with no single department having a statistically-significant higher attrition.
+2) Employees living further away from work are more inclined to leave, as commute times are a factor in work:life balance
+3) Younger employees are more likely to be 'job hoppers' and so hiring and retention needs to consider how this may be mitigated
+4) Job stagnation (years in the same role) causes attrition
 
-1. Choose **Venv** from the dropdown list.
+These four hypotheses will be tested, to allow the business to develop actions plans to address any root causes.
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+Additionally, the data will be analysed to see if any other correlations can be found between employee attrition and other factors, either individually or combined, to allow the business to determine if there are other actions that may be beneficial.
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+Employees will then be clustered based on their risk profile to allow the business to tailor their retention approaches.
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
+## Hypothesis 1 - No department has greater attrition than the others
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+## Main data analysis libraries (Diana)
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
 
- ```console
- pip3 install -r requirements.txt
- ```
+## Analysis techniques used
 
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
 
-1. Click the **kernel** button and choose **Python Environments**.
+## Dashboard design
 
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
 
-```console
-! python --version
-```
+## Unfixed bugs
 
-## Deployment Reminders
+There were no unfixed bugs.
 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
+## Conclusions & recommendations (Diana & Matt)
 
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+Additional data sets would have also allowed us to move into both Predictive and Prescriptive analysis, looking more towards the options and campaigns for our clients. For example, we discussed whether our goal was to improve client health, profits, or a measure of both. Both positions, however, are difficult to explore without both a broader context of health in the regions and the associated costs to those of charges. A company, for example, wanting to maximise profits in the short term may well be perfectly content to have customers smoke at an early stage of their life, knowing that they can charge significantly higher amounts, yet do not take on many, if any of the associated costs that may result in their care later in life. This, put against a company that takes a long-term client-focused approach, may well offer lower costs and monthly premiums for customers who engage in health behaviour, so lowering their BMI and stopping smoking, and as a result both interact and charge their customers in radically different ways.
+In short, given the nature of the data and with limited external context, we took time to address possible different business conditions, and this was presented in both our visualisations and dashboards to reflect potential campaigns to look at addressing both regional and broader trends in health and cost analysis, but where ultimately limited by the scope and depth of the data we had available.
+
+## Folder structure
+
+The Jupyter notebook visualisations of the data can be found within the jupyter_notebook folder, along with the data cleaning and transformation .ipynb.
+
+The original and cleaned data sets can be found in the datasets folder.
+
+The Power BI dashboard, Github user stories csv and the import_issues.py (csv_to_github upload utility) can be found in the main folder.
+
+## Ethical Considerations ✅
+
+- No personally identifiable data was present; GDPR compliance was not required
+- The dataset used binary sex labels; these were retained as categorical fields to allow future expansion to broader gender constructs
+
+## Credits
+
+The repo template was provide by Code Institute.
+The content of these workbooks was informed by training material on the Code Insitute Learning Management System.
+Data was obtained from Kaggle.com.
+CSV-to-Github uploader utility was forked from FaraiB/csv-to-github and adapted to include extra array fields.
+
+## Content
+
+Data is sourced from Kaggle.com, and is a publicly-available dataset.
+Header image is an AI creation from Copilot
+BMI ranges provided by NHS.UK website
+
+## Project Media 🖼️
+
+The header image was created by Copilot to represent human–AI collaboration. It is hosted on Rachel Fallon’s LinkedIn profile.
+
+## Acknowledgements
+
+Thanks to fellow students and tutors at Code Institute for their assistance in pulling together this project and fixing the inevitable issues.
