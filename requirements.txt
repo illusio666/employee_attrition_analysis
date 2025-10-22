@@ -15,4 +15,6 @@ Pillow==10.0.1 # can be removed from requirements before deployment
 ipykernel
 setuptools
 ipython==8.12.2
-ipywidgets
+ipywidgets==8.1.1
+notebook==6.5.6
+widgetsnbextension==4.0.10

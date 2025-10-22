@@ -24,7 +24,7 @@ This publicly-available  data set has been sourced from HuggingFace <https://hug
 
 ## Hypotheses and validation approach 
 
-There are 4 hypotheses that the business has asked to be addressed as part of this analysis:
+There are 4 hypotheses that the business has asked to be validated as part of this analysis:
 
 1) Attrition is spread evenly across all departments, with no single department having a statistically-significant higher attrition.
 2) Employees living further away from work are more inclined to leave, as commute times are a factor in work:life balance
@@ -39,8 +39,16 @@ Employees will then be clustered based on their risk profile to allow the busine
 
 ## Hypothesis 1 - No department has greater attrition than the others
 
+## Hypothesis 2 - Commute distance has an impact on retention
 
-## Main data analysis libraries (Diana)
+## Hypothesis 3 - Younger employees are more likely to leave (CARE: how do you baseline this? Your older workers were once young and if they haven't job-hopped, this doesn't hold water)
+
+## Hypothesis 4 - Job stagnation leads to attrition
+
+## Conclusions
+
+
+## Main data analysis libraries
 
 
 ## Analysis techniques used
@@ -53,40 +61,32 @@ Employees will then be clustered based on their risk profile to allow the busine
 
 There were no unfixed bugs.
 
-## Conclusions & recommendations (Diana & Matt)
+## Conclusions & recommendations 
 
-Additional data sets would have also allowed us to move into both Predictive and Prescriptive analysis, looking more towards the options and campaigns for our clients. For example, we discussed whether our goal was to improve client health, profits, or a measure of both. Both positions, however, are difficult to explore without both a broader context of health in the regions and the associated costs to those of charges. A company, for example, wanting to maximise profits in the short term may well be perfectly content to have customers smoke at an early stage of their life, knowing that they can charge significantly higher amounts, yet do not take on many, if any of the associated costs that may result in their care later in life. This, put against a company that takes a long-term client-focused approach, may well offer lower costs and monthly premiums for customers who engage in health behaviour, so lowering their BMI and stopping smoking, and as a result both interact and charge their customers in radically different ways.
-In short, given the nature of the data and with limited external context, we took time to address possible different business conditions, and this was presented in both our visualisations and dashboards to reflect potential campaigns to look at addressing both regional and broader trends in health and cost analysis, but where ultimately limited by the scope and depth of the data we had available.
+
 
 ## Folder structure
 
-The Jupyter notebook visualisations of the data can be found within the jupyter_notebook folder, along with the data cleaning and transformation .ipynb.
 
-The original and cleaned data sets can be found in the datasets folder.
 
-The Power BI dashboard, Github user stories csv and the import_issues.py (csv_to_github upload utility) can be found in the main folder.
+## Ethical & Accessibility Considerations ✅
 
-## Ethical Considerations ✅
 
-- No personally identifiable data was present; GDPR compliance was not required
-- The dataset used binary sex labels; these were retained as categorical fields to allow future expansion to broader gender constructs
 
 ## Credits
 
 The repo template was provide by Code Institute.
+Sections of code have been taken from the Code Institute LMS lessons and adapted to this scenario.
 The content of these workbooks was informed by training material on the Code Insitute Learning Management System.
-Data was obtained from Kaggle.com.
+Data was obtained from HuggingFace.com from .
 CSV-to-Github uploader utility was forked from FaraiB/csv-to-github and adapted to include extra array fields.
 
 ## Content
 
-Data is sourced from Kaggle.com, and is a publicly-available dataset.
-Header image is an AI creation from Copilot
-BMI ranges provided by NHS.UK website
 
 ## Project Media 🖼️
 
-The header image was created by Copilot to represent human–AI collaboration. It is hosted on Rachel Fallon’s LinkedIn profile.
+
 
 ## Acknowledgements
 
