@@ -41,19 +41,33 @@ Additionally, the data will be analysed to see if any other correlations can be 
 
 Employees will then be clustered based on their risk profile to allow the business to tailor their retention approaches.
 
-## Hypothesis 1 - No department has greater attrition than the others
+## Conclusions:
+
+### Hypothesis 1 - No department has greater attrition than the others
+
+This hypothesis is rejected. 
+
 While sales and HR have similar attrition, Research & Development have a statistically significant lower attrition, so further qualitative research should be done to compare R&D staff sentiment to other depts.
 
-## Hypothesis 2 - Job stagnation leads to attrition 
+### Hypothesis 2 - Job stagnation leads to attrition 
 
-This hypothesis is rejected. Employees who leave the organisation have significantly shorter tenure both in role and in the company than those who have left. Recommendation for exit interviews to seek feedback on whether jobs met expectations for those who leave within 12months of starting.
+This hypothesis is rejected. 
 
-## Hypothesis 3 - Attrition is greater for younger employees
+Employees who leave the organisation have significantly shorter tenure both in role and in the company than those who have left. Recommendation for exit interviews to seek feedback on whether jobs met expectations for those who leave within 12months of starting.
 
-## Hypothesis 4 - Commute distance has an impact on retention
+### Hypothesis 3 - Attrition is greater for younger employees
 
-## Conclusions
+This hypothesis is proven.
 
+With the exception of potential retirees (relevant flag is not present in the data), attrition %s are higher in the 20-35yrs groups. It can also be seen that single employees are more likely to leave.
+
+Perhaps we need a company-wide dating app?
+
+### Hypothesis 4 - Commute distance has an impact on retention
+
+This hypothesis is proven.
+
+Employees with a commute of 10+ miles are more likely to leave and so return-to-work policies should be reviewed if retention is a priority.
 
 ## Main data analysis libraries
 
