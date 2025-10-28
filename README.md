@@ -12,7 +12,9 @@ The business has asked that the Data Analysis team review the data and identify 
 
 ## Executive Summary
 
-Key findings
+Key findings: of the 4 hypotheses, two are proven and two are rejected (see below). Of one of the rejected hypotheses, one has been proven to actually be the opposite (job 'stagnation' does not lead to attrition, short tenure employees are more likely to leave).
+
+When applying machine learning to our data, we find that XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## Dataset Content & Overview 📁
 
