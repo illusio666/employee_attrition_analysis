@@ -3,6 +3,7 @@
 ## Employee Attrition Analysis
 
 The following analysis looks at a total of 1400 employee records for 'Fallon Pharmaceuticals', some of whom have left the organisation. The intent is to improve our understanding of those departing employees, understand if there might be any common factors causing their departure, and to be able to predict future potential departures. This will allow the organisation to do two things:
+
 - to address any underlying factors that have a significant relationship to employee departure, and
 - identify those employees at highest risk of departure and focus on their retention as a priority.
 
@@ -14,7 +15,16 @@ The business has asked that the Data Analysis team review the data and identify 
 
 Key findings: of the 4 hypotheses, two are proven and two are rejected (see below). Of one of the rejected hypotheses, one has been proven to actually be the opposite (job 'stagnation' does not lead to attrition, short tenure employees are more likely to leave).
 
-When applying machine learning to our data, we find that XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+When applying machine learning to our data, we find that we can predict attrition with a 90% accuracy, to enable future prediction of employee attrition. 
+
+When we look at leaving employees, there are two key groups that stand out:
+
+- well compensated but disengaged
+- young and mobile.
+
+For both groups, tactics to improve engagement are suggested in the notebooks, including structured and agreed career paths, skills enhancements, improved managerial engagement and, for the 'young and mobile', improved team social engagement.
+
+Actual areas would need to be validated with qualitiative feedback (employee surveys) as these are based on the limited dataset and 'possible' causes of job mobility.
 
 ## Dataset Content & Overview 📁
 
