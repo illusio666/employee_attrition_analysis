@@ -17,14 +17,17 @@ Key findings: of the 4 hypotheses, two are proven and two are rejected (see belo
 
 When applying machine learning to our data, we find that we can predict attrition with a 90% accuracy, to enable future prediction of employee attrition. 
 
-When we look at leaving employees, there are two key groups that stand out:
+When we look at leaving employees, there are three key areas that stand out:
 
-- well compensated but disengaged
-- young and mobile.
+1) good pay rise but disengaged
+2) young and mobile
+- Additionally long commutes (independent of the two groups above).
 
-For both groups, tactics to improve engagement are suggested in the notebooks, including structured and agreed career paths, skills enhancements, improved managerial engagement and, for the 'young and mobile', improved team social engagement.
+For groups 1) and 2), tactics to improve engagement are suggested in the notebooks, including structured and agreed career paths, skills enhancements, improved managerial engagement and, for the 'young and mobile', improved team social engagement.
 
 Actual areas would need to be validated with qualitiative feedback (employee surveys) as these are based on the limited dataset and 'possible' causes of job mobility.
+
+For long commutes, while this doesn't help to predict attrition in our employee segmentation, it is nevertheless related to elevated attrition levels when commutes exceed 10 miles. So consideration should be given to reviewing the 'return to work' mandate with a priority for employees with a long commute.
 
 ## Dataset Content & Overview 📁
 
