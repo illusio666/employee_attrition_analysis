@@ -1,6 +1,6 @@
 # Employee Attrition Analysis
 
-<img src"jupyter_notebooks/hero.png" alt="Image of individuals shaking hands and another sat on a pile of books working on a laptop, with the words Employee Analysis Engagement Retention">
+<img src="jupyter_notebooks/hero.png" alt="Image of individuals shaking hands and another sat on a pile of books working on a laptop, with the words Employee Analysis Engagement Retention">
 
 The following analysis looks at a total of 1400 employee records for 'Fallon Pharmaceuticals', some of whom have left the organisation. The intent is to improve our understanding of those departing employees, understand if there might be any common factors causing their departure, and to be able to predict future potential departures. This will allow the organisation to do two things:
 
