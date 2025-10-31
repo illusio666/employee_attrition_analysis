@@ -74,6 +74,8 @@ This hypothesis is proven.
 Employees with a commute of 10+ miles are more likely to leave and so return-to-work policies should be reviewed if retention is a priority.
 
 ---
+---
+---
 
 ## Approach
 
@@ -85,9 +87,9 @@ Data is also synthesised as part of the logistic attrition modelling due to the 
 
 ## Data Preparation Summary 🧹
 
-For the ETL notebook, the initial use of ydata-profiling indicated areas for data clean up and any 1:1 correlations between columns. This identified several data fields that could be dropped as they added no value to analysis (unique, constants).
+For the ETL notebook, the initial use of ydata-profiling indicated areas for data clean up and any 1:1 correlations between columns. This identified several data fields that could be dropped as they added no value to analysis (unique, constants). There were no empty values that needed to be imputed and the '0' values were valid and therefore left.
 
-In anticiation of future analysis, some numeric field that represented ordinal sequences were adapted accordingly and 'ratio' fields were added to give an indication of how pay, time in company and time in role related to each other in case that highlighted any themes during the ML modelling.
+In anticiation of future analysis, some numeric field that represented ordinal sequences were adapted accordingly and 'ratio' fields were added to give an indication of how pay, time in company and time in role related to each other in case that highlighted any themes during the ML modelling. As those created non-numeric values (infinites and invalid values) those were changed for the purpose of analysis but marked accordingly in case they needed to be omitted later on.
 
 ## Project Approach 🧠
 
@@ -95,10 +97,11 @@ To ensure a robust set of tasks, the 5 key stages of the activity (ETL, visualis
 
 Those tasks were added to a CSV file in standard User Story format and allocated labels, milestones and an Assignee.
 
-The User Story CSV was then uploaded to Github via a .py issues uploader (see csv-to-github-upload folder and credits for original creator).
+The User Story CSV was then uploaded to a Github project board via a .py issues uploader (see csv-to-github-upload folder and credits for original creator).
 
 Contingency time was allocated, to ensure there was leeway in the event unanticipated issues, with Day 5 tasks being minimal management tasks only.
 
+Tasks were monitored each day to a) ensure workload at start of day was known b) progress was on track midway through the day and c) any slippage at end of day was updated and adjustments made for the next day(s).
 
 ## Main data analysis libraries
 
@@ -116,7 +119,11 @@ To conduct the analyses, the following libraries were used:
 
 ## Analysis techniques used
 
+The analysis used matplotlib, seaborn and plotly to visualise each of the 4 hypotheses. Significance was tested for those visualisations that indicated whether results might be pertinent (Chi-squared for categorical data, Mann-Whitney for non-normal numerical data).
 
+For the machine learning model, RandomForest was used to build a prediction model for attrition; due to the imbalance of data (leavers are only 16% of the dataset) then SMOTE was used to create synthetic data for the attrition group. As the initial results from the full data set were fairly weak, I used logistic regression to identify those features that were most pertinent for attrition, and then limited the model to those top 20 features. The end result was a 90% accuracy rate.
+
+While certain models would warrant a higher accuracy rate e.g. medical diasnoses, for staff retention strategy this is a sound outcome.
 
 ## Dashboard design
 
