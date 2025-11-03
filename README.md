@@ -2,7 +2,7 @@
 
 <img src="jupyter_notebooks/hero.png" alt="Image of individuals shaking hands and another sat on a pile of books working on a laptop, with the words Employee Analysis Engagement Retention">
 
-The following analysis looks at a total of 1400 employee records for 'Fallon Pharmaceuticals', some of whom have left the organisation. The intent is to improve our understanding of those departing employees, understand if there might be any common factors causing their departure, and to be able to predict future potential departures. This will allow the organisation to do two things:
+The following analysis looks at a total of 1400 employee records for 'Fallon Pharmaceuticals' (made-up company), some of whom have left the organisation. The intent is to improve our understanding of those departing employees, understand if there might be any common factors causing their departure, and to be able to predict future potential departures. This will allow the organisation to do two things:
 
 - to address any underlying factors that have a significant relationship to employee departure, and
 - identify those employees at highest risk of departure and focus on their retention as a priority.
