@@ -73,6 +73,15 @@ This hypothesis is proven.
 
 Employees with a commute of 10+ miles are more likely to leave and so return-to-work policies should be reviewed if retention is a priority.
 
+### Segmentation strategy
+
+Two groups of employees have been identified with above-average attrition:
+
+- Young, mobile employees (30% attrition)
+- High payrise but still disconnected (17% attrition).
+
+Priority focus should be on the former group if the company wishes to ensure that investment in training younger employees is retained in the company.
+
 ---
 ---
 ---
@@ -140,14 +149,25 @@ The original and cleaned data CSVs can be found in the Data files folder.
 
 The Power BI dashboard is in the folder Dashboard files, and can also be accessed online (until Pro subscription expires!) at the following link https://app.powerbi.com/links/LCrmSPCrFy?ctid=c233c072-135b-431d-af59-35e05babf941&pbi_source=linkShare
 
+## Ethical Considerations ✅
 
-## Ethical & Accessibility Considerations ✅
+The dataset contained no personally identifiable data and so that did not need to be anonymised. In the event that this same data were taken from a live HR system, there would be a preparatory exercise to remove any personally identifiable data (name, staff number,address, phone number, etc) to conduct analysis, albeit those details would be needed when running the model at a later date to identify staff at risk of attrition.
+
+There would be a real-world consideration when it comes to identify potential leavers and deploying a retention strategy aimed at those groups:
+
+- potential preferential treatment of subsets of employees (training plans, pay reviews, etc)
+- retention strategy may not be in line with the employee's best interest
+- retention strategy for some individuals maynot be in line with the company's best interest e.g. staff with performance issues.
+
+Development and deployment of any strategies would need to be considered in terms of fairness to all employees and what exceptions might be legitimately (and legally) made to those strategies.
+
+Where employees are proveably below market rate pay, this is a valid reason to conduct a review and adjustment. However, such activity based on more subjective means (manager's assessment of identified employee) is subject to bias and therefore risk.
+
+## Accessibility considerations ✅
 
 ALT data has been added to the image to assist screen readers.
 
 Colour palettes have been chosen to be colourblind-safe i.e. no red/green combinations despite the typical bad/good connotations that might be inferred from doing so.
-
-The dataset contained no personally identifiable data and so that did not need to be anonymised. In the event that this same data were taken from a live HR system, there would be a preparatory exercise to remove any personally identifiable data (name, staff number,address, phone number, etc) to conduct analysis, albeit those details would be needed when running the model at a later date to identify staff at risk of attrition.
 
 ## Credits
 
