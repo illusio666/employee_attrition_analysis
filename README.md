@@ -153,7 +153,7 @@ The Power BI dashboard is in the folder Dashboard files, and can also be accesse
 
 The dataset contained no personally identifiable data and so that did not need to be anonymised. In the event that this same data were taken from a live HR system, there would be a preparatory exercise to remove any personally identifiable data (name, staff number,address, phone number, etc) to conduct analysis, albeit those details would be needed when running the model at a later date to identify staff at risk of attrition.
 
-There would be a real-world consideration when it comes to identify potential leavers and deploying a retention strategy aimed at those groups:
+There would be a real-world consideration when it comes to identifying potential leavers and deploying a retention strategy aimed at those groups:
 
 - potential preferential treatment of subsets of employees (training plans, pay reviews, etc)
 - retention strategy may not be in line with the employee's best interest
