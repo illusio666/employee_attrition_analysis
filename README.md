@@ -128,7 +128,7 @@ To conduct the analyses, the following libraries were used:
 
 ## Analysis techniques used
 
-The analysis used matplotlib, seaborn and plotly to visualise each of the 4 hypotheses. Significance was tested for those visualisations that indicated whether results might be pertinent (Chi-squared for categorical data, Mann-Whitney for non-normal numerical data).
+For each of the four hypotheses, the relevant data was visualised in order to detect any potential patterns/causes. Where visualisations indicated a possible relationship, mathematical significance was tested to see whether results were a strong enough relationship to be deemed pertinent  (Chi-squared to test relationships between categorical data, Mann-Whitney for non-normal numerical data across Attrition:Yes and Attrition:No groups).
 
 For the machine learning model, RandomForest was used to build a prediction model for attrition; due to the imbalance of data (leavers are only 16% of the dataset) then SMOTE was used to create synthetic data for the attrition group. As the initial results from the full data set were fairly weak, I used logistic regression to identify those features that were most pertinent for attrition, and then limited the model to those top 20 features. The end result was a 90% accuracy rate.
 
@@ -136,6 +136,13 @@ While certain models would warrant a higher accuracy rate e.g. medical diasnoses
 
 ## Dashboard design
 
+The dashboard is intended to simulate a managerial 'People' dashboard for which Tabs 1 & 2 would be automatically updated as data is refreshed. As such, no 'analysis' commentary is added to those tabs as they're intended to be stand-alone pages for managers to interrogate.
+
+Tab 3 is intended to be a more responsive 'here are our additional findings' tab which would be created bespoke at each refresh to highlight any new insight.
+
+None of the tabs are intended to replicate the attrition prediction/retention strategy in the notebook, as those would be strategic HR outputs for assessment by a small team of stakeholders, and not public-facing.
+
+As the dataset lacks any timestamps (see recommendations),
 
 ## Unfixed bugs
 
@@ -151,13 +158,14 @@ The Power BI dashboard is in the folder Dashboard files, and can also be accesse
 
 ## Ethical Considerations ✅
 
-The dataset contained no personally identifiable data and so that did not need to be anonymised. In the event that this same data were taken from a live HR system, there would be a preparatory exercise to remove any personally identifiable data (name, staff number,address, phone number, etc) to conduct analysis, albeit those details would be needed when running the model at a later date to identify staff at risk of attrition.
+The dataset contained no personally identifiable data and so that did not need to be anonymised. In the event that this same data were taken from a live HR system, there would be a preparatory exercise to remove any personally identifiable data (name, staff number, address, phone number, etc) to conduct analysis, albeit those details would be needed when running the model at a later date to identify staff at risk of attrition.
 
 There would be a real-world consideration when it comes to identifying potential leavers and deploying a retention strategy aimed at those groups:
 
-- potential preferential treatment of subsets of employees (training plans, pay reviews, etc)
+- potential preferential treatment of subsets of employees (training plans, pay reviews, relaxing of 'work-from'home policies for long commuters, etc)
+- tailoring activity towards certain attrition influencers (e.g. marital status) may be inappropriate and seen as 'judgemental'.
 - retention strategy may not be in line with the employee's best interest
-- retention strategy for some individuals maynot be in line with the company's best interest e.g. staff with performance issues.
+- retention strategy for some individuals may not be in line with the company's best interest e.g. staff with performance issues.
 
 Development and deployment of any strategies would need to be considered in terms of fairness to all employees and what exceptions might be legitimately (and legally) made to those strategies.
 
