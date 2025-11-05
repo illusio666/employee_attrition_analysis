@@ -28,7 +28,7 @@ For groups 1) and 2), tactics to improve engagement are suggested in the noteboo
 
 Actual areas would need to be validated with qualitiative feedback (employee surveys) as these are based on the limited dataset and 'possible' causes of job mobility.
 
-For long commutes, while this doesn't help to predict attrition in our employee segmentation, it is nevertheless related to elevated attrition levels when commutes exceed 10 miles. So consideration should be given to reviewing the 'return to work' mandate with a priority for employees with a long commute.
+For long commutes, while this doesn't help to predict attrition in our employee segmentation, it is nevertheless related to elevated attrition levels when commutes exceed 10 miles. So consideration should be given to reviewing the 'return to work' mandate with a priority for employees with a long commute (but see Ethics section regarding bias and treating employees fairly).
 
 ## Hypotheses and validation approach
 
@@ -180,13 +180,20 @@ Colour palettes have been chosen to be colourblind-safe i.e. no red/green combin
 ## Credits
 
 The repo template was provide by Code Institute.
+
 Sections of code have been taken from the Code Institute LMS lessons and adapted to this scenario.
+
 The content of these workbooks was informed by training material on the Code Insitute Learning Management System.
+
 Data was obtained from HuggingFace.com from <https://huggingface.co/datasets/Redsmoothy/HR_Attrition>.
+
 CSV-to-Github uploader utility was forked from FaraiB/csv-to-github and adapted to include extra array fields.
-Copilot was a very able assistant throughout the whole of the process, from the initial analysis of data and hypotheses suggestions, to coding, debugging and helping interpret the results. Copilot is possibly my new best friend, albeit not the most reliable nor always truthful.
+
+Copilot was integral to the whole of the process, from the initial analysis of the dataset, ratifying and improving hypotheses suggestions, to coding (creating, debugging, and/or improving) and helping interpret the results. It also generated the Retention strategies narrative framework, based on the output of the ML clusters. Copilot is possibly my new best friend, albeit not the most reliable nor always truthful.
 
 ## Content
+
+
 
 ## Project Media 🖼️
 
