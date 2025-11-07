@@ -136,6 +136,8 @@ To conduct the analyses, the following libraries were used:
 
 For each of the four hypotheses, the relevant data was visualised in order to detect any potential patterns/causes. Where visualisations indicated a possible relationship, mathematical significance was tested to see whether results showed statistically significant relationships warranting further attention  (Chi-squared to test relationships between categorical data, Mann-Whitney for non-normal numerical data across Attrition:Yes and Attrition:No groups).
 
+Seaborn, Matplotlib and Plotly were all used to visualise the data to aid understanding. Matplotlib was used in the main for simple bar and line graphs, Seaborn for where a KDE overlay was required and Plotly for more interactive graphs e.g. where a hover-tip was required. While there are probably multiple ways to achieve the same results, these were in line with the learning syllabus and were ones I'd used previously.
+
 For the machine learning model, RandomForest was used to build a prediction model for attrition. As the initial results from the full data set were fairly weak, I used logistic regression to identify those features that were most pertinent for attrition, and then limited the model to those top 20 features. Then, due to the imbalance of data (leavers are only 16% of the dataset), SMOTE was used to create synthetic data for the attrition group. The end result was a 90% accuracy rate.
 
 While certain models would warrant a higher accuracy rate e.g. medical diagnoses, for staff retention strategy this is a sound outcome.
@@ -210,6 +212,22 @@ Copilot provided extensive support throughout the project — from hypothesis re
 ## Project Media 🖼️
 
 The banner image for the readme/Notebook 1 was created by Copilot to represent HR and Collaboration.
+
+## Personal reflection
+
+My background is 'business lead' rather than 'technical lead' and so coding was a new skill; however the principles of identifying a business problem and researching supporting data was more familiar. The technical mathematical elements were also somewhat outside of my comfort zone.
+
+While the LMS content was a solid foundation for awareness of the unfamiliar topics, a combination of search engine and Copilot ("Explain to me in plain english like I was a complete novice....") was essential in being able to assimilate some of the concepts.
+
+I sought/took feedback from not only the Code Institute tutors but also my fellow students and Copilot, both in terms of content clarity and its robustness of approach.
+
+To continue my learning journey, there are further areas of AI that I wish to explore:
+
+- creation of AI agents (course already started, will incorporate API usage and app deployment)
+- using AI in project management (course selected, dates to be confirmed)
+- management of AI projects (TBC)
+
+As PowerBI was the main dashboarding tool I used, I will also be revisiting my projects and recreating the dashboards in Tableau, to build on my very basic knowledge and showcase use of both tools equally.
 
 ## Acknowledgements
 
